@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Get the migrations directory
+MIGRATIONS_DIR="$HOME/.local/share/shaharch/migrations"
+
+# Ensure migrations directory exists
+mkdir -p "$MIGRATIONS_DIR"
+
+# Generate epoch timestamp
+TIMESTAMP=$(date +%s)
+
+# Create migration file path
+MIGRATION_FILE="$MIGRATIONS_DIR/$TIMESTAMP.sh"
+
+# Get description from user or use default
+if [ -n "$1" ]; then
+    DESCRIPTION="$*"
+else
+    DESCRIPTION="New migration"
+fi
+
+# Create the migration file with template
+cat > "$MIGRATION_FILE" << EOF
+echo "$DESCRIPTION"
+
+# Add your migration commands here
+
+EOF
+
+# Make the migration executable
+chmod +x "$MIGRATION_FILE"
+
+echo "Created migration: $MIGRATION_FILE"
+echo "Edit the file to add your migration commands"
