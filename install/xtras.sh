@@ -3,5 +3,5 @@ yay -S --noconfirm --needed \
   obsidian-bin typora libreoffice obs-studio kdenlive \
   pinta xournalpp
 
-# Copy over Omarchy applications
+# Copy over Shaharch applications
 source ~/.local/share/shaharch/bin/shaharch-sync-applications || true

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Overwrite local waybar settings with the latest in Omarchy
+# Overwrite local waybar settings with the latest in Shaharch
 cp -f ~/.local/share/shaharch/config/waybar/config ~/.config/waybar/ 2>/dev/null
 cp -f ~/.local/share/shaharch/config/waybar/style.css ~/.config/waybar/ 2>/dev/null
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Power menu for Omarchy
+# Power menu for Shaharch
 # Provides power off, restart, and sleep options
 
 # Function to show power menu
