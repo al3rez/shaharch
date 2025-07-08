@@ -1,9 +1,11 @@
-source ~/.local/share/omarchy/default/bash/functions
-web2app "WhatsApp" https://web.whatsapp.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whatsapp.png
-web2app "Google Photos" https://photos.google.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-photos.png
-web2app "Google Contacts" https://contacts.google.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-contacts.png
-web2app "Google Messages" https://messages.google.com/web/conversations https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-messages.png
-web2app "ChatGPT" https://chatgpt.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/chatgpt.png
-web2app "YouTube" https://youtube.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/youtube.png
-web2app "GitHub" https://github.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/github-light.png
-web2app "X" https://x.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/x-light.png
+source ~/.local/share/shaharch/default/bash/functions
+web2app "WhatsApp" https://web.whatsapp.com/ "https://www.google.com/s2/favicons?domain=whatsapp.com&sz=256"
+web2app "Google Photos" https://photos.google.com/ "https://www.google.com/s2/favicons?domain=photos.google.com&sz=256"
+web2app "Google Contacts" https://contacts.google.com/ "https://www.google.com/s2/favicons?domain=contacts.google.com&sz=256"
+web2app "Google Messages" https://messages.google.com/web/conversations "https://ssl.gstatic.com/android-messages-web/images/2022.3/2x/messages_2022_96dp.png"
+web2app "Claude" https://claude.ai/ "https://www.google.com/s2/favicons?domain=claude.ai&sz=256"
+web2app "YouTube" https://youtube.com/ "https://www.google.com/s2/favicons?domain=youtube.com&sz=256"
+web2app "GitHub" https://github.com/ "https://www.google.com/s2/favicons?domain=github.com&sz=256"
+web2app "X" https://x.com/ "https://www.google.com/s2/favicons?domain=x.com&sz=256"
+web2app "Gmail" https://mail.google.com/mail/ "https://www.google.com/s2/favicons?domain=mail.google.com&sz=256"
+web2app "Google Calendar" https://calendar.google.com/ "https://www.google.com/s2/favicons?domain=calendar.google.com&sz=256"

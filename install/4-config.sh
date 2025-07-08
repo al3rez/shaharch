@@ -1,11 +1,11 @@
 # Copy over Omarchy configs
-cp -R ~/.local/share/omarchy/config/* ~/.config/
+cp -R ~/.local/share/shaharch/config/* ~/.config/
 
 # Ensure application directory exists for update-desktop-database
 mkdir -p ~/.local/share/applications
 
 # Use default bashrc from Omarchy
-echo "source ~/.local/share/omarchy/default/bash/rc" >~/.bashrc
+echo "source ~/.local/share/shaharch/default/bash/rc" >~/.bashrc
 
 # Login directly as user, rely on disk encryption + hyprlock for security
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
@@ -34,7 +34,7 @@ fi
 
 # Set default XCompose that is triggered with CapsLock
 tee ~/.XCompose >/dev/null <<EOF
-include "%H/.local/share/omarchy/default/xcompose"
+include "%H/.local/share/shaharch/default/xcompose"
 
 # Identification
 <Multi_key> <space> <n> : "$OMARCHY_USER_NAME"

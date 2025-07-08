@@ -4,7 +4,7 @@
 # using wofi for an interactive search menu.
 
 USER_HYPRLAND_CONF="$HOME/.config/hypr/hyprland.conf"
-OMARCHY_BINDINGS_CONF="$HOME/.local/share/omarchy/default/hypr/bindings.conf"
+OMARCHY_BINDINGS_CONF="$HOME/.local/share/shaharch/default/hypr/bindings.conf"
 
 # Process the configuration file to extract and format keybindings
 # 1. `grep` finds all lines starting with 'bind' (allowing for leading spaces).
