@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -21,8 +21,14 @@
             <div class="w-48 h-48 mx-auto flex items-center justify-center">
                 <!-- Arch Linux inspired logo with Hyprland elements -->
                 <svg viewBox="0 0 200 200" class="w-full h-full">
+                    <defs>
+                        <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1793d1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
                     <!-- Arch Linux triangle -->
-                    <path d="M100 20 L40 180 L160 180 Z" fill="none" stroke="#1793d1" stroke-width="3"/>
+                    <path d="M100 20 L40 180 L160 180 Z" fill="none" stroke="url(#triangleGradient)" stroke-width="5"/>
                     <!-- Hyprland wavy lines -->
                     <path d="M60 80 Q80 70 100 80 T140 80" fill="none" stroke="#00d4ff" stroke-width="3"/>
                     <path d="M60 100 Q80 90 100 100 T140 100" fill="none" stroke="#00d4ff" stroke-width="3"/>
@@ -31,7 +37,7 @@
                     <text x="100" y="150" text-anchor="middle" font-family="monospace" font-size="20" fill="#1793d1">$_</text>
                 </svg>
             </div>
-            <h1 class="text-4xl font-bold text-center mt-4">SHAHARCH</h1>
+            <h1 class="text-5xl font-bold text-center mt-4" style="font-family: 'Orbitron', monospace; background: linear-gradient(45deg, #1793d1 0%, #00d4ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 0.15em;">SHAHARCH</h1>
         </div>
 
         <!-- Tagline -->
@@ -83,22 +89,61 @@
         </div>
 
         <!-- Features Section -->
-        <div class="w-full max-w-4xl mt-12 mb-8">
-            <h2 class="text-2xl font-bold text-center mb-8">Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="font-semibold text-lg mb-2 text-blue-600">Modern Hyprland</h3>
-                    <p class="text-gray-600">Cutting-edge Wayland compositor with smooth animations and excellent performance</p>
+        <div class="w-full mt-12 mb-8">
+            <h2 class="text-3xl font-bold text-center mb-10">Why Shaharch?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Voice notes take 3 minutes to type.</h3>
+                    <p class="text-lg text-gray-800 mb-2">We transcribe them in 2 seconds. Press Super+T. Speak. Done.</p>
+                    <p class="text-sm text-gray-600">OpenAI-powered transcription directly to your clipboard.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="font-semibold text-lg mb-2 text-blue-600">Opinionated Config</h3>
-                    <p class="text-gray-600">Pre-configured with sensible defaults and productivity-focused keybindings</p>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">You waste 30 seconds finding the right theme.</h3>
+                    <p class="text-lg text-gray-800 mb-2">We switch everything in 1 keypress. Super+Shift+Ctrl+Space. Instant beauty.</p>
+                    <p class="text-sm text-gray-600">6 curated themes. Terminal, browser, editor - all change together.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="font-semibold text-lg mb-2 text-blue-600">Easy Installation</h3>
-                    <p class="text-gray-600">One-command setup with automated dependency management</p>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Terminal lag ruins your flow.</h3>
+                    <p class="text-lg text-gray-800 mb-2">Foot terminal: 0ms startup. Native Wayland. Zero bloat.</p>
+                    <p class="text-sm text-gray-600">While others load, you're already working.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Notifications interrupt deep work.</h3>
+                    <p class="text-lg text-gray-800 mb-2">Super+Ctrl+, = Focus mode. One key. Total silence.</p>
+                    <p class="text-sm text-gray-600">Smart notification management that respects your time.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Your eyes hurt after sunset.</h3>
+                    <p class="text-lg text-gray-800 mb-2">Hyprsunset runs automatically. Blue light gone. Eyes happy.</p>
+                    <p class="text-sm text-gray-600">No configuration needed. It just works.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl mb-3 text-blue-600">Privacy-invading browsers track everything.</h3>
+                    <p class="text-lg text-gray-800 mb-2">Zen Browser by default. Your data stays yours.</p>
+                    <p class="text-sm text-gray-600">Fast, secure, and respects your privacy out of the box.</p>
                 </div>
             </div>
+            
+            <div class="mt-10 text-center bg-gray-100 p-6 rounded-lg max-w-4xl mx-auto">
+                <p class="text-xl font-semibold text-gray-800">68 keybindings. 6 themes. 1 command to install.</p>
+                <p class="text-lg text-gray-600 mt-2">Everything configured. Nothing to set up.</p>
+            </div>
+        </div>
+
+        <!-- Credits Section -->
+        <div class="w-full max-w-4xl mt-12 mb-8 text-center">
+            <h2 class="text-xl font-semibold mb-4">Credits</h2>
+            <p class="text-gray-600">
+                Shaharch is based on <a href="https://omarchy.com" class="text-blue-600 hover:text-blue-800 font-medium">Omarchy</a> by 
+                <a href="https://dhh.dk" class="text-blue-600 hover:text-blue-800 font-medium">David Heinemeier Hansson (DHH)</a>.
+                <br class="mb-2">
+                We've extended it with additional features while maintaining the simplicity and elegance of the original design.
+            </p>
         </div>
 
         <!-- Footer -->
